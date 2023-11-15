@@ -1,0 +1,65 @@
+{
+	"info": {
+		"_postman_id": "0d2320b8-b8cb-453d-aa06-ecf512705b8a",
+		"name": "registration, login, logout",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "29184044",
+		"_collection_link": "https://bold-station-437387.postman.co/workspace/Brandquad~813b8a20-57b1-4911-9fa2-6ed04f0d8718/collection/29184044-0d2320b8-b8cb-453d-aa06-ecf512705b8a?action=share&source=collection_link&creator=29184044"
+	},
+	"item": [
+		{
+			"name": "Creates a user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"коледёнок_владислава\",\r\n  \"email\": \"адрес_электронной_почты\",\r\n  \"password\": \"пароль\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/registration"
+			},
+			"response": []
+		},
+		{
+			"name": "Creates a session",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"string\",\r\n  \"email\": \"string\",\r\n  \"password\": \"string\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/login"
+			},
+			"response": []
+		},
+		{
+			"name": "Ends a session",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}/logout"
+			},
+			"response": []
+		}
+	]
+}
